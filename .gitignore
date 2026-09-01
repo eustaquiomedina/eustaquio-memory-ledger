@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.memory/
+.sibyl-memory/
+__pycache__/
+*.pyc
+*.sqlite
+*.db
+*.mp4
+*.mov
+.DS_Store
