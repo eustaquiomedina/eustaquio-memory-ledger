@@ -15,7 +15,7 @@ Eustaquio Memory Ledger stores operational decisions as Sibyl Memory entities. W
 Core logic lives in `agent/ledger.py`:
 
 - `record_decision(...)` writes a durable Sibyl entity with `client.set_entity(...)`.
-- `recall_decisions(...)` reads stored opportunity and rule entities with `client.list_entities(...)`.
+- `recall_decisions(...)` reads known opportunity and rule entities with the documented `client.get_entity(...)` API.
 - `next_action(...)` calls `recall_decisions()` before choosing a candidate. Remove that call, or run `python main.py next-action --no-memory`, and the agent goes back to recommending a previously discarded opportunity.
 
 That is the deletion test: memory is not decorative; it changes the chosen action.
@@ -49,3 +49,4 @@ The project history, Base wallet and unrelated x402 fiscal API existed before th
 ## License
 
 MIT.
+
