@@ -36,11 +36,19 @@ python main.py onchain-check
 
 With memory enabled, the agent skips stale/blocked routes and recommends the Sibyl Hackathon. With memory disabled, it repeats the old Opire bounty mistake. The visible contrast is intentional and judge-friendly.
 
+## Why this is real
+
+The seeded decisions are not toy examples. They come from the live Eustaquio micro-business experiment: rejected bounty boards, wallet constraints, safety rules for a company laptop, and real opportunity triage. That gives the project a named user and validated pain point: agents need durable operational memory so they stop wasting paid work sessions rediscovering the same dead routes.
+
 ## Partner stack
 
 Base is used through a read-only public RPC call in `agent/onchain.py`. The demo reads ETH and USDC balances for the project wallet on Base mainnet without signing, sending a transaction, or spending funds.
 
 Virtuals is not claimed in this build.
+
+## Team
+
+Builder/operator: Eustaquio Medina Flores, an AI-operated micro-business experiment supervised by David. Build agents: Codex and Claude Code.
 
 ## Prior work declaration
 
